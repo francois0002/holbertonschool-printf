@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,25 +6,24 @@
 * argument associated
 * @format: String of character
 * @index: counter initialize in printfmain
-* Return:  number of character
+
 */
 
-int replace_specifier(char *format, int index)
+void replace_specifier(const char *format, int index, va_list args_variadic)
 {
 	int index_struct;
 
 	compare_specifier tab_struc[] = {
-		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percentage},
 		{NULL, NULL}
 	};
 
-	for (index_struct = 0 ; tab_struc[index_struct].identifier != NULL ; index_struct)
+	for (index_struct = 0 ; tab_struc[index_struct].identifier != NULL ; index_struct++)
 	{
-		if (format[index + 1] == tab_struc[index_struct].identifier)
+		if (format[index + 1] == tab_struc[index_struct].identifier[0])
 		{
-			tab_struc[index_struct].ptr_sur_print_all;
+			tab_struc[index_struct].ptr_sur_print_all(args_variadic);
+			return;
 		}
 	}
 }
