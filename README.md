@@ -1,6 +1,5 @@
-README.md
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.prepeers.co%2Fetablissement%2Fholberton-school-hauts-de-france&psig=AOvVaw2hMkqMBamof0YlcNEADI89&ust=1700747527934000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCptLrg14IDFQAAAAAdAAAAABAD)
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.holbertonschool.com%2F&psig=AOvVaw3Ia1OMGmh7p9vs-UATlfef&ust=1700750320685000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCWsejq14IDFQAAAAAdAAAAABAD)
 
 # C - Printf
 ----------
@@ -32,36 +31,36 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Examples:
 
-String: ```bash _printf("Hello!");```
-Output: ```bash Hello Adrien!```
+String without type: ```bash _printf("Hello!");```
+Output: ```bash Hello! ```
 
 Caratere : ```bash _printf("%c\n", "A");```
-Output: ```bash A```
+Output: ```bash A ```
 
 String: ```bash _printf("%s\n", "Hello Adrien!");```
-Output: Hello Adrien!```
+Output: ```bash Hello Adrien! ```
 
-Integer: ```bash _printf("%i\n", "92");```
-Output: ```bash 92```
+Integer: ```bash _printf("%i\n", "92"); ```
+Output: ```bash 92 ```
 
-Decimal: ```bash _printf("%d\n", "2023");```
-Output: ```bash 2023```
+Decimal: ```bash _printf("%d\n", "2023"); ```
+Output: ```bash 2023 ```
 
-%: ```bash _printf("Imprimer un seul signe pourcent : %%\n");```
-Output: ```bash Imprimer un seul signe pourcent : %```
+%: ```bash _printf("Imprimer un seul signe pourcent : %%\n"); ```
+Output: ```bash Imprimer un seul signe pourcent : % ```
 
 ----------
 
 ## ➤ Files that make up the _printf:
 
-* [1_function_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_function_printf.c) : Contenant le code source de la fonction printf.
-* [2_replace_specifier.c](https://github.com/francois0002/holbertonschool-printf/blob/main/2_replace_specifier.c) : Remplacement des spécificateurs de format dans le code source. Les spécificateurs de format, tels que %s ou %d.
-* [3_print_all.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Impression de différents types de données.
-* [main.h](https://github.com/francois0002/holbertonschool-printf/blob/main/main.h) : Fichier d'en-tête contenant les prototypes des fonctions utilisées par le code source. Il est inclus dans le reste des fichiers par le biais de l'expression : #include "main.h"
-* [putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): 
+* [1_function_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_function_printf.c) : Contains the source code for the printf function.
+* [2_replace_specifier.c](https://github.com/francois0002/holbertonschool-printf/blob/main/2_replace_specifier.c) : Replacing format specifiers in source code. Format specifiers, such as %s or %d.
+* [3_print_all.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Print different types of data.
+* [main.h](https://github.com/francois0002/holbertonschool-printf/blob/main/main.h) : Header file containing prototypes of functions used in source code. It is included in the rest of the files via the expression: #include "main.h".
+* [_putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): 
 
 Compilez le code en utilisant :
-```bash gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c```
+```bash gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c ```
 
 ----------
 
@@ -78,5 +77,5 @@ https://choosealicense.com/licenses/mit/#
 ----------
 
 ## ➤ Author:
-François Gosselin [Github](https://github.com/francois0002)
-Amandine Kemp [Github](https://github.com/amandinekemp)
+- François Gosselin [Github](https://github.com/francois0002)
+- Amandine Kemp [Github](https://github.com/amandinekemp)
