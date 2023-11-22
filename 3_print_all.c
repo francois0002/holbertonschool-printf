@@ -1,12 +1,20 @@
 #include <stdio.h>
+#include <stdarg.h>
+
 /**
- * main - Entry point
- * Description: description
- * Return:  0
+ * print_string - imprime une chaine de caractere
+ * @string: chaine de caractere
+ * Return: affiche chaine de caractere
  */
 
-int main(void)
+void print_string(char *string)
 {
-printf("Hello World\n");
-return (0);
+	int index;
+
+	for (index = 0 ; string[index] != '\0' ; index++)
+	{
+		_putchar(string[index]);
+
+	}
+
 }
