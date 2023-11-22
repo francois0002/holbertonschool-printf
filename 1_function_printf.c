@@ -1,4 +1,4 @@
-#include <stdarg.h>
+#include "main.h"
 
 /**
 * _printf- Entry point
@@ -20,10 +20,10 @@ for (index = 0 ; format[index] != '\0' ; index++)
 {
 	if (format[index] == '%')
 	{
-		replace_specifier(format[index], index);
+		replace_specifier(format, index, args_variadic);
 	}
 _putchar(format[index]);
 }
-
+va_end(args_variadic);
 return (0);
 }

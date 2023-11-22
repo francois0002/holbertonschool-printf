@@ -1,9 +1,18 @@
+
+
 #ifndef __MAIN_H__
 #define __MAIN_H__
 #include <stdarg.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdarg.h>
+#include <unistd.h>
 
 int _putchar(char c);
 int _printf(const char *format, ...);
+void replace_specifier(const char *format, int index, va_list args_variadic);
+void print_string(va_list args_variadic);
 
 
 /**
