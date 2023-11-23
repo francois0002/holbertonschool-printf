@@ -18,6 +18,7 @@ int replace_specifier(const char *format, int index, va_list args_variadic)
 		{"s", print_string},
         {"c", print_char},
         {"%", print_percentage},
+        {"d", print_decimal},
 		{NULL, NULL}
 	};
 
@@ -28,5 +29,6 @@ int replace_specifier(const char *format, int index, va_list args_variadic)
 			length_function += tab_struc[index_struct].ptr_on_functions(args_variadic);
 		}
 	}
+
     return (length_function);
 }

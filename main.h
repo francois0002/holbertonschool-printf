@@ -13,6 +13,7 @@ int replace_specifier(const char *format, int index, va_list args_variadic);
 int print_string(va_list args_variadic);
 int print_char(va_list args_variadic);
 int print_percentage(va_list args_variadic);
+int print_decimal(va_list args_variadic);
 
 /**
  * struct compare_specifier - compare the  specifier include in the

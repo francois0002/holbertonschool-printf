@@ -15,6 +15,7 @@ int index;
 int length = 0;
 int length_function = 0;
 
+
 va_list args_variadic;
 va_start(args_variadic, format);
 
