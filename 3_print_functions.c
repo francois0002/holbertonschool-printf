@@ -69,28 +69,37 @@ int print_percentage(va_list args_variadic)
 int print_decimal(va_list args_variadic)
 {
 
-	int index = 0;
+
 	long int numbers = va_arg(args_variadic, int);
 	int length_function = 0;
-	int *tab;
+	int index_decimal = 1;
+	int number_tmp;
 
 
 	if (numbers < 0)
 	{
-		putchar('-');
+		length_function += _putchar('-');
 		numbers = numbers * (-1);
 	}
 
-
-	for (index = 0 ; numbers != 0 ; index++)
+	if (numbers < 10)
 	{
-		tab[index] = numbers % 10;
+		return (length_function += _putchar(numbers + '0'));
 	}
 
-	while (index != 0)
+	number_tmp = numbers;
+	/*calcul of factor position of digit */
+	while (number_tmp > 9)
 	{
-		length_function += putchar('0' + tab[index]);
+		index_decimal = index_decimal * 10;
+		number_tmp = number_tmp / 10;
 	}
 
-
+	/*extracting each digit and writte it */
+	while (index_decimal >= 1)
+	{
+		length_function += _putchar(((numbers / index_decimal) % 10) + '0');
+		index_decimal = index_decimal / 10;
+	}
+	return (length_function);
 }
