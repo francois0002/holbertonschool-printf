@@ -9,12 +9,15 @@
 
 */
 
-void replace_specifier(const char *format, int index, va_list args_variadic)
+int replace_specifier(const char *format, int index, va_list args_variadic)
 {
 	int index_struct;
+    int length_function = 0;
 
 	compare_specifier tab_struc[] = {
 		{"s", print_string},
+        {"c", print_char},
+        {"%", print_percentage},
 		{NULL, NULL}
 	};
 
@@ -22,8 +25,8 @@ void replace_specifier(const char *format, int index, va_list args_variadic)
 	{
 		if (format[index + 1] == tab_struc[index_struct].identifier[0])
 		{
-			tab_struc[index_struct].ptr_sur_print_all(args_variadic);
-			return;
+			length_function += tab_struc[index_struct].ptr_on_functions(args_variadic);
 		}
 	}
+    return (length_function);
 }
