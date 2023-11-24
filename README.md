@@ -11,7 +11,7 @@
 ## Menu:
 
 - [➤ Description](https://github.com/francois0002/holbertonschool-printf#-description)
-- [➤ Flowchart]()
+- [➤ Flowchart](https://github.com/francois0002/holbertonschool-printf/tree/main#-flowchart)
 - [➤ Format types](https://github.com/francois0002/holbertonschool-printf#-format-types)
 - [➤ Examples](https://github.com/francois0002/holbertonschool-printf#-examples)
 - [➤ Files that make up the _printf](https://github.com/francois0002/holbertonschool-printf#-files-that-make-up-the-_printf)
@@ -33,7 +33,7 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Flowchart:
 
-- [➤ Flowchart ➤](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg)
+![➤ Flowchart ➤](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg)
 
 ----------
 
