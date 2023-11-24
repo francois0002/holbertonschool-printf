@@ -27,34 +27,31 @@ and is followed by optional flags, a width, a precision and a conversion
 specifier. The general syntax of a conversion specification is as follows:
 
 .B Conversion specifiers
-
 .TP
 .BR %d, %i
-Imprime un entier décimal signé.
+Prints a signed decimal integer.
 
 .TP
 .BR %c
-Imprime un caractère.
+Prints a character.
 
 .TP
 .BR %s
-Imprime une chaîne de caractères.
+Prints a character string.
 
 .TP
 .BR %b
-Imprime un entier non signé au format binaire.
+Prints an unsigned integer in binary format.
 
 .TP
 .BR %o, %u, %x, %X
-Imprime un entier non signé en octal (o), décimal (u), ou hexadécimal (x et X).
+Prints an unsigned integer in octal (o), decimal (u), or hexadecimal (x and X).
 
 .SH RETURN VALUE
 .PP
-En cas de réussite, _printf() renvoie le nombre de caractères imprimés
-(à l'exclusion du caractère nul utilisé pour terminer la sortie des chaînes).
-En cas d'erreur, une valeur négative est renvoyée.
-
-
+On success, _printf() returns the number of characters printed
+(excluding the null character used to terminate string output).
+On error, a negative value is returned.
 
 To print strings or character:
 .RS
