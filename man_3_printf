@@ -1,0 +1,83 @@
+Manpage for _printf
+"23 november 2023" "version 1.0" "_printf man page"
+
+.SH NAME
+.TP _printf - formated output conversion
+
+.SH SYPNOSIS
+
+.TP #include "main.h"
+.TP int _printf(const char *format, ...);
+
+.TP #include "main.h"
+.TP int _printf(const char *format, va_list);
+
+.SH DESCRIPTION
+.PP
+The _printf function prints formatted output on standard output (stdout)
+according to the specified format string. The format string can contain
+ordinary characters, which are copied directly to the output, and conversion
+specifiers, each of which triggers the printing of the following arguments.
+
+.B Format string
+.PP
+The format string consists of ordinary characters and conversion
+specifications. A conversion specifier starts with the '%' character
+and is followed by optional flags, a width, a precision and a conversion
+specifier. The general syntax of a conversion specification is as follows:
+
+.B Conversion specifiers
+
+.TP
+.BR %d, %i
+Imprime un entier décimal signé.
+
+.TP
+.BR %c
+Imprime un caractère.
+
+.TP
+.BR %s
+Imprime une chaîne de caractères.
+
+.TP
+.BR %b
+Imprime un entier non signé au format binaire.
+
+.TP
+.BR %o, %u, %x, %X
+Imprime un entier non signé en octal (o), décimal (u), ou hexadécimal (x et X).
+
+.SH RETURN VALUE
+.PP
+En cas de réussite, _printf() renvoie le nombre de caractères imprimés
+(à l'exclusion du caractère nul utilisé pour terminer la sortie des chaînes).
+En cas d'erreur, une valeur négative est renvoyée.
+
+
+
+To print strings or character:
+.RS
+.nf
+#include "main.h"
+_printf("Name of the project: %s", "Printf");
+_printf("Character: %c", 'O');
+.RE
+
+.SH EXAMPLES
+
+To print integer:
+.RS
+.nf
+#include "main.h"
+_printf("Number of applicants: %d", 19);
+.RE
+
+To convert in binary:
+
+#include "main.h"
+_printf("binary of 455: %b", 111000111);
+.RE
+
+AUTHOR
+This manual page was written by  Amandine KEMP et François GOSSELIN
