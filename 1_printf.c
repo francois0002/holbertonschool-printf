@@ -19,6 +19,11 @@ int length_function = 0;
 va_list args_variadic;
 va_start(args_variadic, format);
 
+if (format == NULL)
+{
+	return (-1);
+}
+
 /*Brownse characters format*/
 for (index = 0 ; format[index] != '\0' ; index++)
 {
