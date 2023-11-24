@@ -33,7 +33,7 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Flowchart:
 
-![➤ Flowchart ➤](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg)
+![➤ Flowchart ➤](https://github.com/francois0002/holbertonschool-printf/blob/main/flowchart.jpeg)
 
 ----------
 
