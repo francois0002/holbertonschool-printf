@@ -73,7 +73,7 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 * [2_replace_specifier.c](https://github.com/francois0002/holbertonschool-printf/blob/main/2_replace_specifier.c) : Replacing format specifiers in source code. Format specifiers, such as %s or %d.
 * [3_print_all.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Print different types of data.
 * [main.h](https://github.com/francois0002/holbertonschool-printf/blob/main/main.h) : Header file containing prototypes of functions used in source code. It is included in the rest of the files via the expression: #include "main.h".
-* [_putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): 
+* [_putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): Writes the character c to stdout.
 
 
 * Compile the code using :
