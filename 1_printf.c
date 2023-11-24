@@ -12,6 +12,9 @@
 int _printf(const char *format, ...)
 {
 int index;
+int length = 0;
+int length_function = 0;
+
 
 va_list args_variadic;
 va_start(args_variadic, format);
@@ -20,10 +23,16 @@ for (index = 0 ; format[index] != '\0' ; index++)
 {
 	if (format[index] == '%')
 	{
-		replace_specifier(format, index, args_variadic);
+		length_function += replace_specifier(format, index, args_variadic);
+		length += length_function;
+		index++;
 	}
-_putchar(format[index]);
+	else
+	{
+	length += _putchar(format[index]);
+	}
+
 }
 va_end(args_variadic);
-return (0);
+return (length);
 }
