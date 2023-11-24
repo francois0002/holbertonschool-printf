@@ -76,12 +76,12 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Files that make up the _printf:
 
-* [1_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_function_printf.c) : Contains the source code for the printf function.
+* [1_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_printf.c) : Contains the source code for the printf function.
 * [2_replace_specifier.c](https://github.com/francois0002/holbertonschool-printf/blob/main/2_replace_specifier.c) : Replacing format specifiers in source code. Format specifiers, such as %s or %d.
-* [3_print_functions.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Print different types of data.
+* [3_print_functions.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_functions.c) : Print different types of data.
 * [main.h](https://github.com/francois0002/holbertonschool-printf/blob/main/main.h) : Header file containing prototypes of functions used in source code. It is included in the rest of the files via the expression: #include "main.h".
 * [_putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): Writes the character c to stdout.
-* [flowchart.jpeg](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg): Graphical representation of printf.
+* [flowchart.jpeg](https://github.com/francois0002/holbertonschool-printf/blob/main/flowchart.jpeg): Graphical representation of printf.
 * [LICENSE](https://github.com/francois0002/holbertonschool-printf/blob/main/LICENSE): MIT license.
 * [man_3_printf](https://github.com/francois0002/holbertonschool-printf/blob/main/man_3_printf): Manuel printf.
 * [README.md](https://github.com/francois0002/holbertonschool-printf/blob/main/README.md): Docs.
