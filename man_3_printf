@@ -27,6 +27,7 @@ and is followed by optional flags, a width, a precision and a conversion
 specifier. The general syntax of a conversion specification is as follows:
 
 .B Conversion specifiers
+
 .TP
 .BR %d, %i
 Prints a signed decimal integer.
@@ -44,8 +45,9 @@ Prints a character string.
 Prints an unsigned integer in binary format.
 
 .TP
-.BR %o, %u, %x, %X
-Prints an unsigned integer in octal (o), decimal (u), or hexadecimal (x and X).
+.BR %%
+Prints a literal percent sign.
+
 
 .SH RETURN VALUE
 .PP
@@ -57,8 +59,8 @@ To print strings or character:
 .RS
 .nf
 #include "main.h"
-_printf("Name of the project: %s", "Printf");
-_printf("Character: %c", 'O');
+_printf("Hello %s", "Amandine");
+_printf("Character: %c", 'H');
 .RE
 
 .SH EXAMPLES
@@ -68,12 +70,6 @@ To print integer:
 .nf
 #include "main.h"
 _printf("Number of applicants: %d", 19);
-.RE
-
-To convert in binary:
-
-#include "main.h"
-_printf("binary of 455: %b", 111000111);
 .RE
 
 AUTHOR
