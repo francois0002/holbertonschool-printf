@@ -22,7 +22,7 @@
 
 ## ➤ Description:
 
-The '_printf' function emulates the standard C language function of the same name, responsible for printing format strings on screen. It takes as input an initial variable, a character string, and goes through each character one by one, then prints it.
+The '_printf' function emulates the standard C language function of the same name, responsible for printing formatted strings on screen. It takes as input an initial variable, a character string, and goes through each character one by one, then prints it.
 
 When it encounters a format specifier (e.g. %s or %d), it extracts the corresponding data type from the arguments and prints the contents of the associated variable.
 
@@ -36,7 +36,7 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 | -------- | ----------------------------------- |
 | %c       | Print argument of character type    |
 | %s       | Print argument of string type       |
-| %i       | Print argument of type integer      |
+| %i       | Print argument of integer type      |
 | %%       | Prints a single %                   |
 | %d       | Print a decimal (base 10) number    |
 
@@ -44,23 +44,26 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Examples:
 
-* String without type: ```bash _printf("Hello!");```
-	* Output: ```bash Hello! ```
+* String without type: ``` _printf("Hello!");```
+	* Output: ``` Hello! ```
 
-* Caratere : ```bash _printf("%c\n", "A");```
-	* Output: ```bash A ```
+* Charater : ``` _printf("%c", 'A');```
+	* Output: ``` A ```
 
-* String: ```bash _printf("%s\n", "Hello Adrien!");```
-	* Output: ```bash Hello Adrien! ```
+* String: ``` _printf("Whatever happens, %s", "we're a duo that rocks!");```
+	* Output: ``` Whatever happens, we're a duo that rocks! ```
 
-* Integer: ```bash _printf("%i\n", "92"); ```
-	* Output: ```bash 92 ```
+* Integer: ``` _printf("%i", "92"); ```
+	* Output: ``` 92 ```
 
-* Decimal: ```bash _printf("%d\n", "2023"); ```
-	* Output: ```bash 2023 ```
+* Decimal: ``` _printf("%d", "2023"); ```
+	* Output: ``` 2023 ```
 
-* %: ```bash _printf("Imprimer un seul signe pourcent : %%\n"); ```
-	* Output: ```bash Imprimer un seul signe pourcent : % ```
+* %: ``` _printf("Print a single percent sign : %%"); ```
+	* Output: ``` Print a single percent sign : % ```
+
+* ``` _printf("Hi Adrien, for this %d session, do you think we could have a %c or min of %i %%?", 2023, 'A', 60); ```
+	* Output: ``` Hi Adrien, for this 2023 session, do you think we could have a A or min of 60 %? ```
 
 ----------
 
@@ -74,7 +77,7 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 
 * Compile the code using :
-```bash gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c ```
+``` gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c ```
 
 ----------
 
@@ -82,15 +85,15 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 **General**
 
-* Allowed editors: ```bash vi```, ```bash vim```, ```bash emacs```
-* All your files will be compiled on Ubuntu 20.04 LTS using ```bash gcc```, using the options ```bash -Wall -Werror -Wextra -pedantic -std=gnu89 ```
+* Allowed editors: ``` vi```, ``` vim```, ``` emacs```
+* All your files will be compiled on Ubuntu 20.04 LTS using ``` gcc```, using the options ``` -Wall -Werror -Wextra -pedantic -std=gnu89 ```
 * All your files should end with a new line
-* A ```bash README.md ``` file, at the root of the folder of the project is mandatory
-* Your code should use the ```bash Betty ``` style. It will be checked using ```bash betty-style.pl ``` and ```bash betty-doc.pl```
+* A ``` README.md ``` file, at the root of the folder of the project is mandatory
+* Your code should use the ``` Betty ``` style. It will be checked using ``` betty-style.pl ``` and ``` betty-doc.pl```
 * You are not allowed to use global variables
 * No more than 5 functions per file
-* In the following examples, the ```bash main.c ``` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own ```bash main.c``` files at compilation; do not push your own ```bash main.c ``` file. Our ```bash main.c ``` files might be different from the one shown in the examples
-* The prototypes of all your functions should be included in your header file called ```bash main.h ```
+* In the following examples, the ``` main.c ``` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own ``` main.c``` files at compilation; do not push your own ``` main.c ``` file. Our ``` main.c ``` files might be different from the one shown in the examples
+* The prototypes of all your functions should be included in your header file called ``` main.h ```
 
 ----------
 
