@@ -11,6 +11,7 @@
 ## Menu:
 
 - [➤ Description](https://github.com/francois0002/holbertonschool-printf#-description)
+- [➤ Flowchart]()
 - [➤ Format types](https://github.com/francois0002/holbertonschool-printf#-format-types)
 - [➤ Examples](https://github.com/francois0002/holbertonschool-printf#-examples)
 - [➤ Files that make up the _printf](https://github.com/francois0002/holbertonschool-printf#-files-that-make-up-the-_printf)
@@ -27,6 +28,12 @@ The '_printf' function emulates the standard C language function of the same nam
 When it encounters a format specifier (e.g. %s or %d), it extracts the corresponding data type from the arguments and prints the contents of the associated variable.
 
 In the case of an undeclared format specifier, such as %T, the _printf function behaves intuitively by printing the specifier as is, preserving the function's flexibility to handle future directives.
+
+----------
+
+## ➤ Flowchart:
+
+- [➤ Flowchart ➤](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg)
 
 ----------
 
@@ -69,15 +76,21 @@ In the case of an undeclared format specifier, such as %T, the _printf function 
 
 ## ➤ Files that make up the _printf:
 
-* [1_function_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_function_printf.c) : Contains the source code for the printf function.
+* [1_printf.c](https://github.com/francois0002/holbertonschool-printf/blob/main/1_function_printf.c) : Contains the source code for the printf function.
 * [2_replace_specifier.c](https://github.com/francois0002/holbertonschool-printf/blob/main/2_replace_specifier.c) : Replacing format specifiers in source code. Format specifiers, such as %s or %d.
-* [3_print_all.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Print different types of data.
+* [3_print_functions.c](https://github.com/francois0002/holbertonschool-printf/blob/main/3_print_all.c) : Print different types of data.
 * [main.h](https://github.com/francois0002/holbertonschool-printf/blob/main/main.h) : Header file containing prototypes of functions used in source code. It is included in the rest of the files via the expression: #include "main.h".
 * [_putchar.c](https://github.com/francois0002/holbertonschool-printf/blob/main/_putchar.c): Writes the character c to stdout.
-
+* [flowchart.jpeg](https://github.com/francois0002/holbertonschool-printf/blob/main/Flowchart.jpeg): Graphical representation of printf.
+* [LICENSE](https://github.com/francois0002/holbertonschool-printf/blob/main/LICENSE): MIT license.
+* [man_3_printf](https://github.com/francois0002/holbertonschool-printf/blob/main/man_3_printf): Manuel printf.
+* [README.md](https://github.com/francois0002/holbertonschool-printf/blob/main/README.md): Docs.
 
 * Compile the code using :
 ``` gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c ```
+
+* Read the man using :
+``` man ./man_3_printf ```
 
 ----------
 
